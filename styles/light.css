@@ -12,6 +12,7 @@
   --accent-color: #ff8dcb;
   --menu-color: #000000;
   --title-page-color: #000;
+  --second-title-page-color: #000;
   --cover-image: url("/images/cover-image-light.png");
 }
 
@@ -24,6 +25,7 @@
     --accent-color: #ff8dcb;
     --menu-color: #000000;
     --title-page-color: #000;
+    --second-title-page-color: #000;
     --cover-image: url("/images/cover-image-light.png");
   }
 }

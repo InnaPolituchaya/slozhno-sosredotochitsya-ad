@@ -10,7 +10,8 @@
   --title-color: #db00ff;
   --accent-color: #ff0070;
   --menu-color: #ff0070;
-  --title-page-color: #ff0070;
+  --title-page-color: #000;
+  --second-title-page-color: #ff0070;
   --cover-image: url("/images/cover-image-dark.png");
 }
 

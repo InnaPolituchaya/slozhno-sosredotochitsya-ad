@@ -9,7 +9,8 @@
   --title-color: #db00ff;
   --decor-color: #ff0070;
   --menu-color: #ff0070;
-  --title-page-color: #ff0070;
+  --title-page-color: #000;
+  --second-title-page-color: #ff0070;
 
-  --image-bg: url("/images/cover-image-dark.png");
+  --cover-image: url("/images/cover-image-dark.png");
 }

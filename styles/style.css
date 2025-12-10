@@ -134,7 +134,7 @@ body {
 }
 
 .page__title {
-  color: var(--title-page-color);
+  color: var(--second-title-page-color);
   font-size: 18px;
   font-style: bold;
   font-weight: 700;
@@ -180,12 +180,13 @@ body {
 }
 
 .a-colorful {
-  text-shadow: 2px 2px 0 #ff0070;
+  text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
 }
 
 .second-title {
   margin-top: 27px;
+  color: var(--second-title-page-color);
 }
 
 .pics {
@@ -207,7 +208,7 @@ body {
 
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: #db00ff;
+  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 0.83;
   letter-spacing: 0;
@@ -374,5 +375,9 @@ body {
     gap: 24px;
     height: auto;
     padding-right: 0;
+  }
+
+  .footer__title {
+    font-size: 157px;
   }
 }
