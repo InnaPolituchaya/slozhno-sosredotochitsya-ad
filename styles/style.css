@@ -419,3 +419,13 @@
     grid-column: auto;
   }
 }
+
+@media (width < 768px) {
+  .pic-title {
+    margin-top: 0;
+  }
+
+  .pics {
+    margin-top: -50px;
+  }
+}
