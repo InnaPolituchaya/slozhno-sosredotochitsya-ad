@@ -1,27 +1,30 @@
-.page.theme_dark {
-  --accent-color: #ff0070;
-  --font-color: #000028;
-  --font-color-title: #ff0070;
-  --font-text-color: #f1b2ce;
-  --font-color-menu: #ff0070;
-  --font-color-menu-hover: #ff007066;
-  --title-color: #db00ff;
-  --title-decor-color: #ff0070;
-  --background-color: #000028;
-  --background-image: url(../images/cover-image-dark.png);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #ff0070;
-    --font-color: #000028;
-    --font-color-title: #ff0070;
-    --font-text-color: #f1b2ce;
-    --font-color-menu: #ff0070;
-    --font-color-menu-hover: #ff007066;
-    --title-color: #db00ff;
-    --title-decor-color: #ff0070;
     --background-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
+    --accent-color: #ff0070;
+    --heading-color: #db00ff;
+    --hover-border-color: rgba(255, 0, 112, 0.4);
+    --menu-color: #ff0070;
+    --text-color: #f1b2ce;
+    --title-decor-color: #000028;
+    --title-color: #ff0070;
+    --display-bulb: flex;
   }
+
+  .layout {
+    background-image: url(../images/cover-image-dark.png);
+  }
+}
+
+.layout.theme_dark {
+  --background-color: #000028;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --hover-border-color: rgba(255, 0, 112, 0.4);
+  --menu-color: #ff0070;
+  --text-color: #f1b2ce;
+  --title-decor-color: #000028;
+  --title-color: #ff0070;
+  --display-bulb: flex;
+  background-image: url(../images/cover-image-dark.png);
 }

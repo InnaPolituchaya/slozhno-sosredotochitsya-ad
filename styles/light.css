@@ -1,39 +1,12 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-/* Принудительно светлая */
-:root.theme-light {
-  --accent-color: #ff0070;
-  --font-color: #353430;
-  --font-color-title: #353430;
-  --font-text-color: #353430;
-  --font-color-menu: #353430;
-  --font-color-menu-hover: #32312d66;
-  --title-color: #ffc2e6;
-  --title-decor-color: #ff8dcb;
+.layout.theme_light {
   --background-color: #fff1f7;
-  --cover-image: url(/images/cover-image-light.png);
-}
-
-/* Автоматика — если у пользователя светлая тема в системе */
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: #ff0070;
-    --font-color: #353430;
-    --font-color-title: #353430;
-    --font-text-color: #353430;
-    --font-color-menu: #353430;
-    --font-color-menu-hover: #32312d66;
-    --title-color: #ffc2e6;
-    --title-decor-color: #ff8dcb;
-    --background-color: #fff1f7;
-    --cover-image: url("/images/cover-image-light.png");
-  }
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --accent-color: #ff8dcb;
+  --menu-color: #353430;
+  --text-color: #353430;
+  --heading-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --title-color: #353430;
+  --hover-border-color: rgba(50, 49, 45, 0.4);
+  --display-bulb: none;
+  background-image: url(../images/cover-image-light.png);
 }
