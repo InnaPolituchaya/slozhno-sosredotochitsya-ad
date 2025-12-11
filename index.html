@@ -11,36 +11,37 @@
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
     <meta name="color-scheme" content="light dark" />
-    <meta
-      name="description"
-      content="Страница про способы концентрации внимания."
-    />
+    <meta name="description" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
   </head>
-  <body class="layout">
+  <body class="page">
     <header class="top-banner frame-corners">
       <span class="top-banner__indicator" aria-hidden="true">REC</span>
 
-      <nav class="theme-switcher">
-        <ul class="theme-switcher__list">
-          <li class="theme-switcher__item">
-            <button class="theme-switcher__btn theme-switcher__btn_mode-light">
+      <nav class="header__theme-menu">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
               День
             </button>
           </li>
-          <li class="theme-switcher__item">
+          <li class="header__theme-menu-item">
             <button
-              class="theme-switcher__btn theme-switcher__btn_active theme-switcher__btn_mode-auto"
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
               Авто
             </button>
           </li>
-          <li class="theme-switcher__item">
-            <button class="theme-switcher__btn theme-switcher__btn_mode-dark">
+          <li class="header__theme-menu-item">
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+            >
               Неон
             </button>
           </li>
@@ -74,7 +75,10 @@
               target="_blank"
               >выяснили</a
             >, что мозгу тяжело концентрироваться даже на двух делах
-            одновременно…
+            одновременно. А когда в поле внимания попадает несколько важных
+            задач, организм паникует и выделяет кортизол и адреналин — «гормоны
+            стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
+            устаём.
           </p>
         </article>
 
@@ -174,7 +178,6 @@
 
         <article class="content-section__block">
           <h4 class="highlighted-title text-normal">Прогуляйтесь</h4>
-          <h4 class="title-decor regular">Прогуляйтесь</h4>
           <p>
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
@@ -211,56 +214,29 @@
         </article>
       </section>
 
-      <section class="content-section visuals">
-        <h2 class="content-section__subtitle highlighted-title">
-          А можно в картинках?
-        </h2>
-
-        <picture class="visuals__item">
-          <img
-            class="visuals__img"
-            src="./images/sunset.png"
-            alt="Солнце садится за горы."
-            loading="lazy"
-          />
-        </picture>
-
-        <picture class="visuals__item">
-          <img
-            class="visuals__img"
-            src="./images/ice-cream.png"
-            alt="Мороженое."
-            loading="lazy"
-          />
-        </picture>
-
-        <picture class="visuals__item">
-          <img
-            class="visuals__img"
-            src="./images/tape.png"
-            alt="Кассета."
-            loading="lazy"
-          />
-        </picture>
-
-        <picture class="visuals__item">
-          <img
-            class="visuals__img"
-            src="./images/books.png"
-            alt="Книги."
-            loading="lazy"
-          />
-        </picture>
-
-        <picture class="visuals__item">
-          <img
-            class="visuals__img"
-            src="./images/street.png"
-            alt="Улица."
-            loading="lazy"
-          />
-        </picture>
-      </section>
+      <div class="title-decor main-title pic-title">А можно в картинках?</div>
+      <div class="pics">
+        <img
+          class="img"
+          loading="lazy"
+          alt="sunset"
+          src="./images/sunset.png"
+        />
+        <img
+          class="img"
+          loading="lazy"
+          alt="ice-cream"
+          src="./images/ice-cream.png"
+        />
+        <img class="img" loading="lazy" alt="tape" src="./images/tape.png" />
+        <img class="img" loading="lazy" alt="books" src="./images/books.png" />
+        <img
+          class="img"
+          loading="lazy"
+          alt="street"
+          src="./images/street.png"
+        />
+      </div>
     </main>
 
     <footer class="bottom-banner">
