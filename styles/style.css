@@ -1,18 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 body {
-  color: var(--text-color);
-}
-
-.header.decorated-zone {
+  color: var(--font-color);
   background-image: var(--cover-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header.decorated-zone {
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
-  background-attachment: fixed;
 }
 
 .theme-menu {
@@ -59,7 +59,7 @@ body {
 
 .header__theme-menu-list {
   margin: 0;
-  color: var(--menu-color);
+  color: var(--font-color-menu);
   font-size: 18px;
   padding-right: 12px;
   display: flex;
@@ -76,12 +76,11 @@ body {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--menu-color);
+  border: 1px solid var(--font-color-menu);
 }
 
 .title-decor {
-  background-color: var(--accent-color);
-  color: var(--bg-color, #000);
+  background-color: var(--title-decor-color);
   font-weight: 700;
   display: flex;
   justify-self: center;
@@ -97,9 +96,9 @@ body {
   letter-spacing: 0;
   font-weight: 700;
   font-style: bold;
-  align-self: center;
   justify-self: flex-start;
   padding-left: 10px;
+  padding-top: 20px;
 }
 
 .header__title__about {
@@ -117,11 +116,11 @@ body {
   align-self: center;
   margin-top: 40px;
   width: 95%;
-  color: var(--text-color);
+  color: var(--font-color);
 }
 
 .page-body {
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
 }
 
 .page {
@@ -131,10 +130,11 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   background-attachment: fixed;
+  align-self: center;
 }
 
 .page__title {
-  color: var(--second-title-page-color);
+  color: var(--font-color-menu);
   font-size: 18px;
   font-style: bold;
   font-weight: 700;
@@ -150,13 +150,13 @@ body {
 
 .main-title {
   margin-bottom: 14px;
-  color: var(--title-page-color);
+  color: var(--font-color);
 }
 
 .main2-title {
   margin-bottom: 16px;
   font-size: 18.5px;
-  color: var(--title-page-color);
+  color: var(--font-color);
 }
 
 .non-main-title {
@@ -167,7 +167,7 @@ body {
 .main-p {
   font-family: "IBM Plex Mono";
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--font-text-color);
   margin-bottom: 26px;
 }
 
@@ -176,17 +176,17 @@ body {
 }
 
 .pic-title {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .a-colorful {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--title-decor-color);
   text-decoration: none;
 }
 
 .second-title {
   margin-top: 27px;
-  color: var(--second-title-page-color);
+  color: var(--font-color-menu);
 }
 
 .pics {
@@ -217,7 +217,7 @@ body {
   align-self: center;
   justify-self: center;
   text-align: center;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .footer-ver {
@@ -227,6 +227,8 @@ body {
 @media screen and (min-width: 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-top: 100px;
+    padding-left: 0;
   }
 
   .rec-text {
@@ -296,6 +298,10 @@ body {
     margin-top: 48px;
   }
 
+  .pic-title {
+    margin-top: 60px;
+  }
+
   .pics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -342,6 +348,12 @@ body {
 @media screen and (min-width: 1024px) {
   .header__title__about__text {
     width: 490px;
+    margin-top: 50px;
+  }
+
+  .header__title {
+    margin-top: 50px;
+    padding-left: 0px;
   }
 
   .section__2 {
@@ -379,5 +391,17 @@ body {
 
   .footer__title {
     font-size: 157px;
+  }
+
+  .title-decor.main2-title {
+    margin-top: 30px;
+  }
+
+  .mb {
+    margin-top: 20px;
+  }
+
+  .pic-title {
+    margin-top: 50px;
   }
 }
