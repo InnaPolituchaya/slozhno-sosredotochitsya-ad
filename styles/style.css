@@ -425,7 +425,16 @@
     margin-top: 0;
   }
 
+  .img:nth-child(3) {
+    padding-bottom: 5px;
+  }
+
   .pics {
     margin-top: -50px;
+    gap: 10px;
+  }
+
+  .bottom-banner__title {
+    margin-top: 12px;
   }
 }
